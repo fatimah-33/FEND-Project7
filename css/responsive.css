@@ -1,0 +1,114 @@
+@media screen and (max-width: 480px){
+  header nav h1{
+padding: 1rem 3rem;
+  }
+  #maincontent section .filter-options{
+    height: 90%;
+    text-align: center;
+  }
+  #maincontent section .filter-options h2{
+        padding-top: 1rem;
+        font-size: 1.7em;
+  }
+  #maincontent section .filter-options select{
+            width: 90%;
+  }
+  main section #restaurants-list li{
+     padding: 1rem;
+      width: 90%;
+      margin-bottom: 1.5rem;
+      margin-left: 0rem;
+      margin-top: 0rem;
+      margin-right: 0rem;
+      text-align: center;
+  }
+    main  #reviews-container{
+    padding: 2rem;
+    }
+  main #restaurant-container, #reviews-container{
+    padding-right: 2rem;
+padding-left: 1.5rem;
+  }
+  #reviews-list li{
+      padding: 0;
+  }
+  #reviews-container #reviews-list{
+    margin-bottom: 6rem;
+  }
+  body #footer{
+    width: 100% !important;
+  }
+  #breadcrumb {
+     width: calc(50% - 80px);
+   }
+}
+@media screen and (max-width: 1024px) and (min-width:480px){
+main section #restaurants-list{
+    padding: 30px 5px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+main section #restaurants-list li{
+      padding: 25px 30px 25px;
+}
+  #maincontent section .filter-options {
+        height: 80px;
+            padding-top: 1rem;
+}
+    #maincontent section .filter-options h2{
+      font-size: 1.8em;
+    }
+    header nav h1 a{
+      font-size: 18pt;
+    }
+    header nav{
+      padding-top: 2.5rem;
+    }
+  body  #maincontent #restaurant-container, #reviews-containe{
+    padding-top: 12rem;
+      padding-left: 1rem;
+    }
+    body  #maincontent #reviews-container{
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-left: 0;
+    }
+  main section  #reviews-list li{
+    margin: 0 0;
+    }
+    body #footer{
+      width: 100% !important;
+    }
+  main section  #reviews-list{
+      margin-bottom: 7rem;
+    }
+}
+@media screen and  (min-width:1024px){
+  header nav h1 {
+  	padding-top: 1.5rem;
+  }
+  header nav h1 a {
+    font-size: 20pt;
+  }
+  main section #restaurants-list {
+    display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+main section #restaurants-list li {
+  padding:  30px 25px;
+
+}
+#maincontent section .filter-options {
+  height: 85px;
+	padding-top: 1rem;
+}
+body #footer{
+  width: 100% !important;
+}
+}
