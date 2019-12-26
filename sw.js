@@ -1,4 +1,5 @@
-const staticCacheName = 'site-static-v1';
+//install server worker 
+const staticCacheName = 'site-static';
 const assets = [
     '/',
     '/index.html',
@@ -8,6 +9,7 @@ const assets = [
     '/js/main.js',
     '/js/restaurant_info.js',
     '/css/styles.css',
+    '/css/responsive.css',
     '/img/1.jpg',
     '/img/2.jpg',
     '/img/3.jpg',
@@ -22,12 +24,16 @@ const assets = [
     'https://unpkg.com/leaflet@1.3.1/dist/leaflet.js',
     'https://unpkg.com/leaflet@1.3.1/dist/leaflet.css',
     '//normalize-css.googlecode.com/svn/trunk/normalize.css',
-    '',
+    'https://unpkg.com/leaflet@1.3.1/dist/leaflet.js',
+    'mapbox://styles/mapbox/streets-v11',
+    'https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js',
+    'https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css',
+    'https://unpkg.com/leaflet@1.3.1/dist/leaflet.css',
 
 ];
-// install service worker 
+// install service worker
 self.addEventListener('install', evt => {
-    // console.log('services worker is installed');
+    console.log('services worker is installed');
     evt.waitUntil(
     caches.open(staticCacheName).then(cache => {
         console.log('caching shell assets');
@@ -36,9 +42,9 @@ self.addEventListener('install', evt => {
     );
 });
 
-// activate service worker 
+// activate service worker
 self.addEventListener('activate', evt => {
-    // console.log('service worker is activated');
+    console.log('service worker is activated');
 });
 
 //fetch event
